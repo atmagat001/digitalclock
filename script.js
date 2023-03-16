@@ -14,6 +14,7 @@ function updateClock () {
   
     ampm = hour > 12 ? "PM" : "AM";
     hour = hour > 12 ? hour-=12 : hour ;
+    hour = hour === 0 ? 12 : hour ;
     hour = hour < 10 ? "0"+ hour: hour ;
     minute = minute < 10 ? "0"+ minute: minute ;
     second = second < 10 ? "0" + second: second;
